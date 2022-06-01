@@ -78,7 +78,7 @@ export default {
         year: "April 2019",
         title: "Latexでレポート提出",
         content:
-          '数学の講義レポートを提出する際に、マークアップ言語であるLatexを用いて、資料を作成。\nまた、ICT教材であるGeoGebra、Wintpic、Mathematicaを用いて、動的教材を提案する。',
+          '数学の講義レポートを提出する際に、マークアップ言語であるLaTexを用いて、資料を作成。\nまた、ICT教材であるGeoGebra、Wintpic、Mathematicaを用いて、動的教材を提案する。',
       },
        {
         year: "April 2022",
