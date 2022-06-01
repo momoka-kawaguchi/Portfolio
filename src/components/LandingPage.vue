@@ -2,11 +2,11 @@
   <header class="header parallax">
     <div class="name">
       <div class="wrapper-name">
-        <AnimateOnVisible name="fadeDown" ::duration="1">
+        <AnimateOnVisible name="fadeDown" :duration="1">
           <h1>{{ user.name }}</h1>
         </AnimateOnVisible>
         <hr />
-        <AnimateOnVisible name="fadeUp" ::duration="1">
+        <AnimateOnVisible name="fadeUp" :duration="1">
           <p>{{ user.status }}</p>
         </AnimateOnVisible>
       </div>
@@ -30,7 +30,7 @@ export default {
 }
 
 .parallax {
-  background-image: url("../assets/img/bg.jpg");
+  background-image: url("../assets/img/tulip.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

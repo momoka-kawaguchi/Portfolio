@@ -6,7 +6,7 @@
       <div class="resume-description">
         <strong class="color-light" v-html="post.title"></strong>
       </div>
-      <div class="color-darker" v-html="post.content"></div>
+      <div class="color-darker pre-wrap" v-html="post.content"></div>
     </div>
   </div>
 </template>
@@ -15,6 +15,10 @@
 export default {
   name: "ExperienceColumn",
   props: ["posts", "title"],
+  data: () => ({
+    career: "2015年高校入学",
+
+  }),
 };
 </script>
 
@@ -40,5 +44,9 @@ export default {
 }
 .color-darker {
   color: map-get($colors, dark);
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
 }
 </style>

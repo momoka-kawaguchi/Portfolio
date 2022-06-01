@@ -2,11 +2,10 @@
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
       <LandingPage :user="user" />
-      <Description :user="user" :content="findSlug('description')" :links="findSlug('links')" />
+      <Description :user="user" :content="findSlug('description')" :links="links" />
       <Experience :content="findSlug('experiences')" />
-      <Skills :content="findSlug('skills')" />
       <Projects :content="findSlug('projects')" />
-      <Footer :user="user" :links="findSlug('links')" />
+      <Footer :user="user" :links="links" />
     </div>
   </transition>
 </template>
@@ -15,7 +14,6 @@
 import LandingPage from "./components/LandingPage.vue";
 import Description from "./components/Description.vue";
 import Experience from "./components/Experience.vue";
-import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
 import Footer from "./components/Footer.vue";
 
@@ -27,7 +25,6 @@ export default {
     LandingPage,
     Description,
     Experience,
-    Skills,
     Projects,
     Footer,
   },
@@ -35,6 +32,14 @@ export default {
     isLoaded: false,
     user: {},
     posts: [],
+    links: {
+      metadata: {
+        facebook: 'https://facebook.com/momochan36',
+        github: 'https://github.com/momoka-kawaguchi',
+        linkedin: 'https://www.linkedin.com/in/momoka-kawaguchi',
+        instagram: 'https://www.instagram.com/momochan36'
+      }
+    }
   }),
   methods: {
     fetchPosts() {
@@ -71,12 +76,12 @@ export default {
       user_data = this.extractFirstObject(user_data);
       this.posts = posts.objects;
       this.user = {
-        name: user_data.metadata.name,
-        status: user_data.metadata.status,
-        email: user_data.metadata.email,
-        phone: user_data.metadata.phone,
-        city: user_data.metadata.city,
-        lang: user_data.metadata.lang,
+        name: 'Momo-blog',
+        status:'Welcome to my page!!',
+        email: 'momojazz36@gmail.com',
+        phone: '080-1225-5890',
+        city: 'Yachiyo,Chiba',
+        lang: 'Japanese',
         photo: user_data.metadata.photo,
       }
       this.isLoaded = true;

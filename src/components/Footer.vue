@@ -3,7 +3,7 @@
     <div>
         <font-awesome-icon class="copyright-icon" icon="copyright"/> 
         2020 {{user.name}}
-        | Get this template <a href="https://github.com/hbollon/portfolio-vuejs" target="_blank">here</a> ! 
+        | Get this template <a href="https://github.com/momoka-kawaguchi" target="_blank">here</a> ! 
     </div>
     <SocialBar :links="links"/>
   </footer>
@@ -16,7 +16,7 @@ export default {
   props: ['user', 'links'],
   components: {
     SocialBar,
-  },
+  }
 }
 </script>
 
