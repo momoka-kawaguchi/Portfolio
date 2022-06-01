@@ -10,6 +10,6 @@
 
 ## 私の情報
 * Github: [@momoka-kawaguchi](https://github.com/momoka-kawaguchi)
-* LinkedIn: [@Hugo Bollon](https://www.linkedin.com/in/momoka-kawaguchi/)
+* LinkedIn: [@Momoka Kawaguchi](https://www.linkedin.com/in/momoka-kawaguchi/)
 * Instagram: [@momochan36](https://www.instagram.com/momochan36/)
 * Twitter: [@momochanjazz](https://twitter.com/momochanjazz)
