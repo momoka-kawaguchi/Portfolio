@@ -12,7 +12,7 @@ export default {
     props: ['content'],
 data: () => ({
     pres_first: `エンジニアを目指す修士1年生。\n大学院では、数学を専攻。好きな公式は、オイラー積の公式！笑`,
-    pres_second: '大学の授業では、C,Python,JavaScriptを学習。\n現在は、Reactを勉強中…(インターン探してます🥺)'
+    pres_second: '大学の授業では、C,Python,JavaScriptを学習。\n現在は、Vue.jsを勉強中…(インターン探してます🥺)'
   }),
 }
 </script>

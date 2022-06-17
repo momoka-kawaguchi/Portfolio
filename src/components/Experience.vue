@@ -2,10 +2,11 @@
   <section id="experience">
     <AnimateOnVisible name="fadeDown" :duration="1">
       <Title
-        class="title"
+        :class="title"
         :title="content.metadata.title"
-        :description="content.metadata.description"
-      />
+        description="Education and Learning"
+      >
+      </Title>
     </AnimateOnVisible>
 
     <AnimateOnVisible name="fadeUp" :duration="1">
