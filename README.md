@@ -2,7 +2,7 @@
 - 勉強のために、Webサイトを作成してみました！
 
 # デモページはこちら
-- https://master--delightful-sopapillas-5adc13.netlify.app/
+- https://deluxe-brioche-b3c919.netlify.app/
 
 # 起動方法
 1. npm install
