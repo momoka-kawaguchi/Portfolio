@@ -2,7 +2,7 @@
 - 勉強のために、Webサイトを作成してみました！
 
 # デモページはこちら
-- https://deluxe-brioche-b3c919.netlify.app/
+- https://jazzy-choux-05adac.netlify.app/
 
 # 起動方法
 1. npm install
