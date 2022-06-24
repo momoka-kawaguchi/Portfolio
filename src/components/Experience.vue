@@ -101,9 +101,9 @@ export default {
       },
       {
         year: "April 2019",
-        title: "Latexでレポート提出",
+        title: "LaTeXでレポート提出",
         content:
-          "数学の講義レポートを提出する際に、マークアップ言語であるLaTexを用いて、資料を作成。\nまた、ICT教材であるGeoGebra、Wintpic、Mathematicaを用いて、動的教材を提案する。",
+          "数学の講義レポートを提出する際に、マークアップ言語であるLaTeXを用いて、資料を作成。\nまた、ICT教材であるGeoGebra、Wintpic、Mathematicaを用いて、動的教材を提案する。",
       },
       {
         year: "April 2022",
@@ -153,9 +153,9 @@ export default {
       },
       {
         year: "April 2019",
-        title: "Latexでレポート提出",
+        title: "LaTeXでレポート提出",
         content:
-          "「Latexで作成したレポートしか受け付けないわ！」という教授がいたから、しょうがなくLatexを、、\nコロナ禍でのレポート課題が多すぎて、気づいた頃にはWordよりもLatexで作成する方が早くなっていた😅",
+          "「LaTeXで作成したレポートしか受け付けないわ！」という教授がいたから、しょうがなくLaTeXを、、\nコロナ禍でのレポート課題が多すぎて、気づいた頃にはWordよりもLaTeXで作成する方が早くなっていた😅",
       },
       {
         year: "April 2022",
