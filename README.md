@@ -1,10 +1,10 @@
-# このアプリについて
+## このアプリについて
 - 勉強のために、Webサイトを作成してみました！
 
-# デモページはこちら
+## デモページはこちら
 - https://jazzy-choux-05adac.netlify.app/
 
-# 起動方法
+## 起動方法
 1. npm install
 2. npm run serve
 
