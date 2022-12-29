@@ -2,7 +2,11 @@
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
       <LandingPage :user="user" />
-      <Description :user="user" :content="findSlug('description')" :links="links" />
+      <Description
+        :user="user"
+        :content="findSlug('description')"
+        :links="links"
+      />
       <Experience :content="findSlug('experiences')" />
       <Projects :content="findSlug('projects')" />
       <Footer :user="user" :links="links" />
@@ -34,12 +38,12 @@ export default {
     posts: [],
     links: {
       metadata: {
-        facebook: 'https://facebook.com/momochan36',
-        github: 'https://github.com/momoka-kawaguchi',
-        linkedin: 'https://www.linkedin.com/in/momoka-kawaguchi',
-        instagram: 'https://www.instagram.com/momochan36'
-      }
-    }
+        twitter: "https://twitter.com/momochanjazz",
+        github: "https://github.com/momoka-kawaguchi",
+        linkedin: "https://www.linkedin.com/in/momoka-kawaguchi",
+        instagram: "https://www.instagram.com/momochan36",
+      },
+    },
   }),
   methods: {
     fetchPosts() {
@@ -64,29 +68,29 @@ export default {
       });
     },
     extractFirstObject(objects) {
-      if(objects.objects == null)
-        return void 0;
-      else
-        return objects.objects[0];
-    }
+      if (objects.objects == null) return void 0;
+      else return objects.objects[0];
+    },
   },
   created() {
     document.body.classList.add("loading");
-    Promise.all([this.fetchPosts(), this.fetchUser()]).then(([posts, user_data]) => {
-      user_data = this.extractFirstObject(user_data);
-      this.posts = posts.objects;
-      this.user = {
-        name: 'Momo-blog',
-        status:'Welcome to my page!!',
-        email: 'momojazz36@gmail.com',
-        phone: '080-1225-5890',
-        city: 'Yachiyo,Chiba',
-        lang: 'Japanese',
-        photo: user_data.metadata.photo,
+    Promise.all([this.fetchPosts(), this.fetchUser()]).then(
+      ([posts, user_data]) => {
+        user_data = this.extractFirstObject(user_data);
+        this.posts = posts.objects;
+        this.user = {
+          name: "Momo-blog",
+          status: "Welcome to my page!!",
+          email: "momojazz36@gmail.com",
+          phone: "080-1225-5890",
+          city: "Yachiyo,Chiba",
+          lang: "Japanese",
+          photo: user_data.metadata.photo,
+        };
+        this.isLoaded = true;
+        this.$nextTick(() => document.body.classList.remove("loading"));
       }
-      this.isLoaded = true;
-      this.$nextTick(() => document.body.classList.remove("loading"));
-    });
+    );
   },
 };
 </script>

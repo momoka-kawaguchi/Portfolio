@@ -2,8 +2,8 @@
   <div class="social-wrap">
     <ul>
       <li>
-        <a :href="links.metadata.facebook" target="_blank">
-          <font-awesome-icon class="icon" :icon="['fab', 'facebook-square']" />
+        <a :href="links.metadata.twitter" target="_blank">
+          <font-awesome-icon class="icon" :icon="['fab', 'twitter-square']" />
         </a>
       </li>
       <li>
@@ -26,21 +26,21 @@
 </template>
 
 <script>
-    export default {
-        name: 'SocialBar',
-        props: ['links'],
-    }
+export default {
+  name: "SocialBar",
+  props: ["links"],
+};
 </script>
 
 <style scoped lang="scss">
-  @import '@/styles/constants.scss';
- .social-wrap {
-    li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .icon {
-      font-size: 3rem;
-    }
+@import "@/styles/constants.scss";
+.social-wrap {
+  li {
+    display: inline-block;
+    margin-right: 10px;
   }
+  .icon {
+    font-size: 3rem;
+  }
+}
 </style>
