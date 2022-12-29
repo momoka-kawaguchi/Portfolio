@@ -2,7 +2,7 @@
 - 勉強のために、Webサイトを作成してみました！
 
 ## デモページはこちら
-- https://jazzy-choux-05adac.netlify.app/
+- https://resilient-speculoos-5e4ed2.netlify.app/
 
 ## 起動方法
 1. npm install
